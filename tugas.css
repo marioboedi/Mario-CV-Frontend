@@ -1,0 +1,286 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Base Styles */
+.kiri {
+    position: fixed;
+    width: 400px;
+    height: 100vh;
+    background: rgb(131, 58, 180);
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+}
+
+.foto-kontak {
+    position: absolute;
+    top: 50px;
+    text-align: center;
+}
+
+.foto {
+    width: 50%;
+    height: auto;
+    border: 5px solid red;
+    border-radius: 50%;
+}
+
+.btn {
+    width: 50%;
+    background-color: aquamarine;
+    border-radius: 100px;
+    margin: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 8px;
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.btn:hover {
+    background-color: crimson;
+    color: white;
+    transition: 0.5s;
+}
+
+.kanan {
+    position: absolute;
+    left: 400px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    background-image: 
+        linear-gradient(135deg, #e0e0e0 25%, transparent 25%),
+        linear-gradient(225deg, #e0e0e0 25%, transparent 25%),
+        linear-gradient(45deg, #e0e0e0 25%, transparent 25%),
+        linear-gradient(315deg, #e0e0e0 25%, transparent 25%);
+    background-position: 
+        10px 0, 
+        10px 0, 
+        0 0, 
+        0 0;
+    background-size: 20px 20px;
+    background-repeat: repeat;
+}
+
+.navbar {
+    padding-top: 50px;
+    padding-left: 70px;
+}
+
+.menu {
+    float: right;
+    padding-right: 50px;
+    font-size: 1.8rem;
+}
+
+.menu a {
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #ff6600;
+}
+
+#profile {
+    padding-top: 50px;
+    padding-left: 70px;
+    font-size: 1.2rem;
+}
+
+#about {
+    padding-top: 50px;
+    padding-left: 70px;
+    text-align: center;
+    float: center;
+    padding-right: 50px;
+    clear: both;
+}
+
+#achievements {
+    padding-top: 150px;
+    padding-left: 70px;
+    clear: both;
+}
+
+.skills {
+    padding-top: 150px;
+    padding-left: 70px;
+    clear: both;
+}
+
+.box {
+    padding-right: 40px;
+}
+
+.skills .box {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills .box h4 {
+    text-transform: uppercase;
+    color: crimson;
+    font-weight: 500%;
+}
+
+.skills .box .persentase {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: grey;
+}
+
+.skills .box .persentase div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: magenta;
+}
+
+#footer {
+    padding-top: 250px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#experience {
+    padding-top: 150px;
+    padding-left: 70px;
+    clear: both;
+}
+
+#education{
+    padding-top: 100px;
+    padding-left: 70px;
+    clear: both;
+    padding-top: 40px ;
+}
+
+.title
+{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+
+}
+
+#contacts {
+    padding-top: 150px;
+    padding-left: 70px;
+    clear: both;
+    display: grid;
+}
+
+#contacts ul {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#contacts ul li {
+    list-style: none;
+    color: crimson;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#contacts-item i {
+    margin-right: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.spasi {
+    width: 35%;
+}
+
+.font-amsterdam {
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h5{
+    font-style: italic;
+}
+
+
+#profile{
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-direction: alternate;
+ }
+  #profile span {
+    display: inline-block;
+    animation-duration: 3s;
+    animation-name: growshrink;
+  }
+  
+  @keyframes slidein {
+    from {
+      translate: 150vw 0;
+      scale: 200% 1;
+    }
+  
+    to {
+      translate: 0 0;
+      scale: 100% 1;
+    }
+  }
+  
+  @keyframes growshrink {
+    25%,
+    75% {
+      scale: 100%;
+    }
+  
+    50% {
+      scale: 200%;
+      color: magenta;
+    }
+  }
+
+  .animate-charcter
+  {
+     text-transform: uppercase;
+    background-image: linear-gradient(
+      -225deg,
+      #4616f5 0%,
+      #7c2cd1 29%,
+      #fa3030 67%,
+      #ffa600 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+        font-size: 190px;
+  }
+  
+  @keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
